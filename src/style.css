@@ -28,10 +28,9 @@ body {
 }
 
 main {
-    min-height: 95vh;
+    min-height: 97vh;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -44,7 +43,7 @@ main {
     justify-content: center;    
 
     border-radius: 2rem;
-    max-width: 40vh;
+    max-width: 22rem;
 
     box-shadow: 0rem 3rem 3rem -28px var(--Desaturated-blue)
 }
@@ -69,12 +68,12 @@ main {
     text-align: center;
 }
 
-.text h1, .annual-text {
+.text h1, .annual-p-text {
     color: var(--Dark-blue);
     font-weight: 900;
 }
 
-.text p, .price-text {
+.text p, .price-p-text {
     font-weight: 500;
     color: var(--Desaturated-blue);
 }
@@ -85,7 +84,7 @@ main {
 
 .price {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
     height: 5rem;
@@ -93,6 +92,17 @@ main {
     margin: 1.5rem 0;
     
     background-color: var(--Very-pale-blue);
+}
+
+.price-div {
+    display: flex;
+}
+
+.price-div-text {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 20px;
 }
 
 .change-button {
@@ -144,4 +154,40 @@ footer a{
 
 footer a:hover {
     color: var(--Dark-blue);
+}
+
+@media (min-width: 700px) {
+    body {
+        background-image: url(./assets/images/pattern-background-desktop.svg);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--Pale-blue)
+    }
+
+    main {
+        min-height: 95vh;
+    }
+
+    .container {
+        border-radius: 1rem;
+        max-width: 28rem;
+        min-height: 42rem;
+    }
+
+    .presentation {
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .content {
+        padding: 3.5rem
+    }
+
+    .text h1 {
+        font-size: 2rem
+    }
+
+    .price {
+        height: 6rem;
+    }
 }
