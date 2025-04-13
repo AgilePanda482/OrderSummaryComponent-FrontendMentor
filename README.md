@@ -11,7 +11,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Author](#author)
 
 ## Overview
-This is a simple page to practice HTML, CSS and JavaScript. The challenge comes from the Frontend Mentor page.
+This is a simple page to practice HTML and CSS. The challenge comes from the Frontend Mentor page.
 
 ### Screenshot
 
